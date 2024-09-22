@@ -12,14 +12,26 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TensorLite_IntegrationTest"
         tools:targetApi="31">
+        <!-- allowBackUp, dataExtractionRules, and fullBackUpContent won't be used (likely)
+        icon is the app's launcher icon and can me found in mimap
+        supportsRtl: supports right to left
+        theme: customizable?
+        Theme apples a custom theme to the application
+        -->
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:theme="@style/Theme.TensorLite_IntegrationTest">
+            <!--
+            MainActivity is connected to MainActivity.java
+            exported true means this activity is accessible from other apps
+            Intent filter defines how we launch this activity
+            -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
+                <!-- menas it is activated from the main entry of ppp -->
                 <category android:name="android.intent.category.LAUNCHER" />
+                <!--identifies the activity as a launcher activity-->
             </intent-filter>
         </activity>
     </application>
