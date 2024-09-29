@@ -28,6 +28,7 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
+
     }
     buildFeatures {
         viewBinding = true
@@ -46,4 +47,11 @@ dependencies {
     implementation(libs.tensorflowLite)
     implementation(libs.tensorflowLiteSupport)
     implementation(libs.tensorflowLiteGpu)
+    implementation(libs.androidx.camera.core)
+    implementation(libs.androidx.camera.camera2)
+    implementation(libs.androidx.camera.lifecycle)
+    implementation(libs.androidx.camera.video)
+    implementation(libs.androidx.camera.view)
+    implementation(libs.androidx.camera.extensions)
+
 }
